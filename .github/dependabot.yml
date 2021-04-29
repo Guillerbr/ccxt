@@ -1,0 +1,23 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: qs
+    versions:
+    - 6.10.0
+    - 6.9.6
+  - dependency-name: mocha
+    versions:
+    - 8.2.1
+    - 8.3.0
+    - 8.3.1
+  - dependency-name: eslint-config-airbnb-base
+    versions:
+    - 14.1.0
+  - dependency-name: cloudscraper
+    versions:
+    - 3.9.1
